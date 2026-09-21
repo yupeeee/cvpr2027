@@ -1,0 +1,30 @@
+{
+  "tasks": {
+    "appearance": {
+      "positive": "a photo of a red {object}",
+      "negative": "a photo of a blue {object}",
+      "protected": ["composition", "category"],
+      "thresholds": {
+        "a": {"decision": 0.0, "margin": 1.0, "protected_tolerance": 1.0},
+        "b": {"decision": 0.0, "margin": 0.5, "protected_tolerance": 0.75}
+      }
+    },
+    "composition": {
+      "positive": "a close-up photo of part of a {object}",
+      "negative": "a photo showing the entire {object}",
+      "protected": ["appearance", "category"],
+      "thresholds": {
+        "a": {"decision": 0.0, "margin": 1.0, "protected_tolerance": 1.0},
+        "b": {"decision": 0.0, "margin": 0.5, "protected_tolerance": 0.75}
+      }
+    }
+  },
+  "category": {
+    "positive": "a photo of a {object}",
+    "negative": "a photo without a {object}",
+    "thresholds": {
+      "a": {"protected_tolerance": 1.0},
+      "b": {"protected_tolerance": 0.75}
+    }
+  }
+}

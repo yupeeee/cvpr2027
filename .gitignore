@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Pilot artifacts (preserve the declared directory layout).
+/logs/*
+!/logs/.gitkeep
+/ckpts/*
+!/ckpts/.gitkeep
+/figs/*
+!/figs/.gitkeep

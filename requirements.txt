@@ -1,0 +1,14 @@
+# Keep the existing compatible Torch/CUDA installation. Tested versions are in README.md.
+torch>=2.4,<3
+diffusers>=0.35,<0.39
+transformers>=4.49,<6
+# Required by the default SigLIP SentencePiece tokenizer and tokenizer conversion.
+sentencepiece>=0.2,<0.3
+protobuf>=4.25,<7
+accelerate>=1.0,<2
+safetensors>=0.4
+numpy>=1.26
+matplotlib>=3.8
+Pillow>=10
+pytest>=8
+tqdm>=4.66,<5
